@@ -536,8 +536,7 @@ header .sub-menu ul.menu li a.moved:hover {
   border-bottom: .01rem solid #fff;
 }
 
-.history .history_containor{
-}
+
 
 .history .history_containor .history_box{
   padding-top: 30px;
@@ -609,3 +608,37 @@ footer .footer_icons .footer_icon{
   border-radius: 2rem;
   cursor:pointer;
 }
+
+/* 슬라이드 이미지 숨김 */
+.slider .slide {
+  display: none;
+}
+/* 첫 번째 슬라이드 보이기 */
+.slider .slide.active {
+  display: block;
+}
+/* 기본 버튼 스타일 */
+.slideButton {
+  background-color: #a39696;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* 모서리를 더 둥글게 */
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+/* 호버 효과 */
+.slideButton:hover {
+  background-color: #759fcc; /* 호버 시 배경색 변경 */
+}
+
+/* 클릭 효과 */
+.slideButton:active {
+  background-color: #93aec9; /* 클릭 시 배경색 변경 */
+}
+.controls {
+  text-align: center;
+}
+

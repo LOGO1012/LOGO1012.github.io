@@ -63,3 +63,23 @@ window.addEventListener('scroll', _.throttle(
     }
   }
 ), 300)
+
+// 현재 활성화된 슬라이드의 인덱스를 추적하는 변수
+let currentSlide = 0;
+
+// 이전 슬라이드로 이동하는 함수
+function prevSlide() {
+  const slides = document.querySelectorAll('.slide');
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+// 다음 슬라이드로 이동하는 함수
+function nextSlide() {
+  const slides = document.querySelectorAll('.slide');
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
