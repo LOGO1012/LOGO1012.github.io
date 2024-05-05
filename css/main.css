@@ -642,4 +642,19 @@ footer .footer_icons .footer_icon{
 .controls {
   text-align: center;
 }
+.Projects_show-readme-btn__v1p__ a{
+  display: table;
+  padding: .5rem 1rem;
+  background-color: #222;
+  border-radius: .25rem;
+  color: #fff;
+  cursor: pointer;
+
+}
+.Projects_show-readme-btn__v1p__ a:hover {
+  background-color: #444; /* 호버 상태일 때 배경색 변경 */
+}
+
+
+
 
