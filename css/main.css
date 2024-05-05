@@ -328,6 +328,8 @@ header .sub-menu ul.menu li a.moved:hover {
   background-color: #fff;
   margin-bottom: 0;
   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  overflow-x: hidden; /* 가로 방향으로 넘침 숨김 */
+  overflow-y: auto; /* 세로 방향으로 넘칠 때 스크롤 표시 */
   
 }
 
@@ -659,6 +661,13 @@ footer .footer_icons .footer_icon{
   background-color: #444; /* 호버 상태일 때 배경색 변경 */
 }
 
+
+
+
+
+
+
+
 /* 반응형 디자인을 위해 미디어 쿼리를 사용합니다. */
 @media screen and (max-width: 1024px) {
   .inner {
@@ -668,3 +677,40 @@ footer .footer_icons .footer_icon{
 
 
 
+/* 화면 크기가 768px 이하일 때 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* 적절한 크기로 변경 */
+  }
+}
+
+/* 화면 크기가 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px; /* 더 작은 크기로 변경 */
+  }
+}
+
+
+
+/* 화면이 768px 이하일 때 */
+@media screen and (max-width: 768px) {
+  .summary .summary_Header {
+    font-size: 45px; /* 작은 화면에 대한 글꼴 크기 조정 */
+  }
+
+  .summary .summary_description p {
+    font-size: 20px; /* 작은 화면에 대한 글꼴 크기 조정 */
+  }
+}
+
+/* 화면이 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  .summary .summary_Header {
+    font-size: 28px; /* 더 작은 화면에 대한 글꼴 크기 조정 */
+  }
+
+  .summary .summary_description p {
+    font-size: 15px; /* 더 작은 화면에 대한 글꼴 크기 조정 */
+  }
+}
