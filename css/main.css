@@ -1,5 +1,7 @@
 /* COMMON */
 
+
+
 body {
   background-color: #fff;
   color: #333;
@@ -7,6 +9,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Block Han Sans', sans-serif;
+
 }
 
 a {
@@ -18,9 +21,9 @@ a {
 }
 
 .inner {
-  display:block;
+    display:block;
     width: 1100px;
-    margin: auto;
+    margin: auto; /* 페이지 중앙에 정렬하기 위해 추가 */
     position: relative;
 }
 
@@ -93,7 +96,7 @@ header {
 }
 
 header.moved {
-  width: 100%;
+
   background-color: #fff;
   border-bottom: 1px solid #fff;
   position: fixed;
@@ -201,7 +204,7 @@ header .sub-menu ul.menu li a.moved:hover {
   position: relative;
   margin:100px auto 0;
   text-align: center;
-  width: 100%;
+
 }
 
 .summary .btn {
@@ -231,7 +234,7 @@ header .sub-menu ul.menu li a.moved:hover {
   position: relative;
   background-color: #fff;
   margin:0 auto 2rem;
-  width: 100%;
+
   /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
@@ -289,7 +292,7 @@ header .sub-menu ul.menu li a.moved:hover {
 .skillinventory {
   position: relative;
   margin:0 auto 0;
-  width: 100%;
+
   /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
@@ -419,7 +422,7 @@ header .sub-menu ul.menu li a.moved:hover {
 .projects {
   position: relative;
   margin:0 auto 0;
-  width: 100%;
+
   /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
@@ -518,7 +521,7 @@ header .sub-menu ul.menu li a.moved:hover {
 .history {
   position: relative;
   margin:0 auto 0;
-  width: 100%;
+
   /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
@@ -594,6 +597,7 @@ footer {
   height: 8rem;
   text-align: center;
   padding-top: 3rem;
+
 }
 
 footer .footer_icons{
@@ -655,6 +659,12 @@ footer .footer_icons .footer_icon{
   background-color: #444; /* 호버 상태일 때 배경색 변경 */
 }
 
+/* 반응형 디자인을 위해 미디어 쿼리를 사용합니다. */
+@media screen and (max-width: 1024px) {
+  .inner {
+      max-width: 100%; /* 화면 크기에 따라 가로 폭을 조정합니다. */
+  }
+}
 
 
 
