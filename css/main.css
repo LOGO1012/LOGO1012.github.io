@@ -445,12 +445,13 @@ header .sub-menu ul.menu li a.moved:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   font-family: Noto Sans KR,sans-serif;
+  justify-content: center;
 }
 
 .projects .project_containor .project_box{
   
   flex-shrink: 0;
-  width: 70%;
+  width: 100%;
   padding: 1.5rem;
   margin: 35px;
   border-radius: 0.7rem;
