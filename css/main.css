@@ -22,7 +22,7 @@ a {
 
 .inner {
   max-width: 1100px; /* 최대 너비 설정 */
-  width: 90%; /* 최대 너비의 90%로 설정 */
+  width: 100%;
   margin: auto; /* 페이지 중앙에 정렬하기 위해 추가 */
   position: relative;
 }
@@ -154,18 +154,6 @@ header .sub-menu ul.menu li {
   position: relative;
 }
 
-header .sub-menu ul.menu li::before {
-
-  content:"";
-
-  width: 1px;
-  height: 12px;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
 
 header .sub-menu ul.menu li:first-child::before{
   display:none;
@@ -200,7 +188,7 @@ header .sub-menu ul.menu li a.moved:hover {
   /* max-width: 71.25rem; */
   background-color: #52c76f;
   position: relative;
-  margin:100px auto 0;
+  margin:100px auto auto auto;
   text-align: center;
 
 }
@@ -290,11 +278,8 @@ header .sub-menu ul.menu li a.moved:hover {
 .skillinventory {
   position: relative;
   margin:0 auto 0;
-
-  /* max-width: 71.25rem; */
-  padding: 4rem 2rem;
+  padding-bottom: 10%;
   margin: 2 0 0 auto;
-  height: 70rem;
   background-color: #CED3DC;
 }
 
@@ -347,76 +332,6 @@ header .sub-menu ul.menu li a.moved:hover {
 }
 
 
-.archive {
-  position: relative;
-  margin:0 auto 0;
-  width: 100%;
-  /* max-width: 71.25rem; */
-  padding: 4rem 2rem;
-  margin: 2 0 0 auto;
-  height: 35rem;
-  background-color: #333;
-} 
-
-.archive .archive_title{
-  font-family: Black Han Sans,sans-serif;
-  color: #fff;
-  padding: 45px 0 30px 0 ;
-  font-weight: 200;
-  font-size: 3rem;
-  text-align: center;
-  word-break: kiip-all;
-  border-bottom: .01rem solid #fff;
-  
-}
-
-.archive .archive_containor{
-  display:flex;
-  flex-flow: column wrap;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-family: Noto Sans KR,sans-serif;
-}
-
-.archive .archive_containor .archive_box{
-  flex-shrink: 0;
-  width: 24rem;
-  padding: 1.5rem;
-  margin: 20px;
-  border-radius: 0.7rem;
-  background-color: #fff;
-  margin-bottom: 0;
-  box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255   / 20%);
-}
-
-.archive .archive_containor .archive_box .archive_box_title{
-  padding-bottom: .5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #ccc;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #56585C;
-}
-
-.archive .archive_containor .archive_box .archive_box_des {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.archive .archive_containor .archive_box .archive_box_des a{
-  color:#529AC7;
-}
-
-.archive .archive_containor .archive_box .archive_box_des ul{
-  list-style-type: disc;
-}
-.archive .archive_containor .archive_box .archive_box_des li{
-  list-style-position: inside;
-  text-indent: -20px;
-  padding-left:20px;
-}
 
 
 .projects {
