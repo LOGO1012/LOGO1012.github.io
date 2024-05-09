@@ -659,4 +659,8 @@ footer .footer_icons .footer_icon{
   background-color: #444; /* 호버 상태일 때 배경색 변경 */
 }
 
-
+@media screen and (max-width: 1024px) {
+  #hidden {
+    display: none;
+  }
+}
