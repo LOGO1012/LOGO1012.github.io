@@ -574,10 +574,38 @@ footer .footer_icons .footer_icon{
   background-color: #444; /* 호버 상태일 때 배경색 변경 */
 }
 
+
+.menu-toggle {
+  display: none; /* 기본적으로 숨겨진 아이콘 */
+  position: absolute;
+  top: 35px; /* 위쪽 여백 */
+  right: 30px; /* 오른쪽 여백 */
+}
+
+
+#menu-icon {
+  font-size: 24px; /* 아이콘 크기 */
+  color: #ffffff; /* 아이콘 색상 */
+  cursor: pointer; /* 클릭 가능한 커서로 설정 */
+}
+
+#menu-icon:hover {
+  color: #56585C;
+}
+
+header.moved #menu-icon {
+  color: #000000; /* 이동할 때 메뉴 아이콘 색상 변경 */
+}
+
+header.moved .sub-menu.active {
+  background-color: #ffffff;
+}
+
+
+/* 미디어 쿼리 */
+
 @media screen and (max-width: 1024px) {
-  #hidden {
-    display: none;
-  }
+
   .summary .summary_Header {
     font-size: 2.7rem; /* 원하는 크기로 조절 */
   }
@@ -608,6 +636,58 @@ footer .footer_icons .footer_icon{
     overflow: auto;
 
   }
+
+  .info_wraper {
+    display: flex;
+
+  }
+  
+  .info_title {
+    flex: 0 0 82px; /* 혹은 다른 너비로 지정 */
+    margin-left: -10px;
+  }
+  
+  .info_des {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .menu-toggle {
+    display: block; /* 작은 화면 크기에서 보이도록 함 */
+  }
+
+  .sub-menu {
+    display: none; /* 기본적으로 숨겨진 메뉴 */
+    position: absolute; /* 절대 위치로 설정 */
+    top: 80%; /* 헤더 아래에 나타나도록 함 */
+    left: 0;
+
+  }
+
+  .sub-menu.active {
+    display: flex; /* 메뉴를 보이도록 함 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    flex-direction: column; /* 항목들을 세로로 나열 */
+    background-color: #52c76f;
+    width: 100%;
+  }
+  
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    padding: 10px; /* 각 메뉴 항목의 여백 설정 */
+    text-align: center; /* 가운데 정렬 */
+  }
+  
+  .menu li:last-child {
+    border-bottom: none; /* 마지막 항목의 구분선 제거 */
+  }
+  
 }
 
 
