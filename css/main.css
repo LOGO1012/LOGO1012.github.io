@@ -578,4 +578,36 @@ footer .footer_icons .footer_icon{
   #hidden {
     display: none;
   }
+  .summary .summary_Header {
+    font-size: 2.7rem; /* 원하는 크기로 조절 */
+  }
+
+  .aboutme .aboutme_description .aboutme_infos {
+    display: flex; /* Flexbox 레이아웃 적용 */
+    flex-direction: column; /* 아이템들을 세로로 정렬 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    margin-left: -50px;
+    text-align: left;
+  }
+
+  .projects .project_containor .project_box .project_box_des{
+    display: flex; /* Flexbox 레이아웃 적용 */
+    flex-direction: column; /* 아이템들을 세로로 정렬 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    overflow: auto;
+  }
+  .projects .project_containor .project_box .project_box_des_left{
+    width: auto;
+  }
+
+
+  .history .history_containor .history_box{
+    display: flex; /* Flexbox 레이아웃 적용 */
+    flex-direction: column; /* 아이템들을 세로로 정렬 */
+    white-space: nowrap;
+    overflow: auto;
+
+  }
 }
+
+
