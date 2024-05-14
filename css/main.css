@@ -640,6 +640,8 @@ header.moved .sub-menu.active {
 
   
 }
+
+/* 토글 아이콘 미디어 쿼리*/
 @media screen and (max-width: 1024px) {
   
   .info_wraper {
@@ -648,8 +650,7 @@ header.moved .sub-menu.active {
   }
   
   .info_title {
-    flex: 0 0 82px; /* 혹은 다른 너비로 지정 */
-    margin-left: -10px;
+    flex: 1 0 74px; /* 혹은 다른 너비로 지정 */
   }
   
   .info_des {
@@ -674,8 +675,6 @@ header.moved .sub-menu.active {
   .sub-menu.active {
     display: flex; /* 메뉴를 보이도록 함 */
     justify-content: center; /* 가로 방향 중앙 정렬 */
-    align-items: center; /* 세로 방향 중앙 정렬 */
-    flex-direction: column; /* 항목들을 세로로 나열 */
     background-color: #52c76f;
     width: 100%;
   }
