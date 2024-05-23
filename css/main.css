@@ -540,15 +540,24 @@ footer .footer_icons .footer_icon{
 }
 /* 기본 버튼 스타일 */
 .slideButton {
-  background-color: #a39696;
-  color: white;
-  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(228, 228, 228, 0.5);
   border: none;
-  border-radius: 20px; /* 모서리를 더 둥글게 */
+  padding: 10px;
   cursor: pointer;
-  font-size: 16px;
-
+  border-radius: 50%;
 }
+
+.leftButton {
+  left: 10px;
+}
+
+.rightButton {
+  right: 10px;
+}
+
 
 /* 호버 효과 */
 .slideButton:hover {

@@ -274,22 +274,38 @@
               <div class="project_box_title">사용자 관리 웹 페이지</div>
               <div class="project_box_subtitle">231112 ~ 231126</div>
               <div class="project_box_des">
-                <div class="project_box_des_left">
+                <div class="project_box_des_left" style="position: relative;">
                   <div class="slider">
-                    <div class="slide active"><img src="images/cs.png" width="100%" height="700"></div>
-                    <div class="slide"><img src="images/sign.png" width="100%" height="700"></div>
-                    <div class="slide"><img src="images/로그인.PNG" width="100%" height="700"></div>
-                    <div class="slide"><img src="images/mypage.png" width="100%" height="700"></div>
-                    <div class="slide"><img src="images/관리자로그인.PNG" width="100%" height="700"></div>
-                    <div class="slide"><img src="images/관리자페이지.PNG" width="100%" height="700"></div>
-                    
+                    <div class="slide active">
+                      <img src="images/cs.png" width="100%" height="700">
+                      <button class="slideButton leftButton" onclick="prevSlide()">◀</button>
+                      <button class="slideButton rightButton" onclick="nextSlide()">▶</button>
+                    </div>
 
+                    <div class="slide"><img src="images/sign.png" width="100%" height="700"></div>
+                    <button class="slideButton leftButton" onclick="prevSlide()">◀</button>
+                    <button class="slideButton rightButton" onclick="nextSlide()">▶</button>
+
+                    <div class="slide"><img src="images/로그인.PNG" width="100%" height="700"></div>
+                    <button class="slideButton leftButton" onclick="prevSlide()">◀</button>
+                    <button class="slideButton rightButton" onclick="nextSlide()">▶</button>
+
+                    <div class="slide"><img src="images/mypage.png" width="100%" height="700"></div>
+                    <button class="slideButton leftButton" onclick="prevSlide()">◀</button>
+                    <button class="slideButton rightButton" onclick="nextSlide()">▶</button>
+
+                    <div class="slide"><img src="images/관리자로그인.PNG" width="100%" height="700"></div>
+                    <button class="slideButton leftButton" onclick="prevSlide()">◀</button>
+                    <button class="slideButton rightButton" onclick="nextSlide()">▶</button>
+
+                    <div class="slide"><img src="images/관리자페이지.PNG" width="100%" height="700"></div>
+                    <button class="slideButton leftButton" onclick="prevSlide()">◀</button>
+                    <button class="slideButton rightButton" onclick="nextSlide()">▶</button>
+                    
                   </div>
                   <div class="controls">
-                    <button class="slideButton" onclick="prevSlide()"><</button>
                     <span class="slideInfo" id="currentSlide"></span>
                     <span id="slideCount"></span>
-                    <button class="slideButton" onclick="nextSlide()">></button>
                   </div>
                   
                   
@@ -306,11 +322,10 @@
                  
                  2. **개인 페이지 기능**:<br>
                     - 플랫폼을 사용하여 사업자들을 광고하는 사용자들의 개인 페이지 생성<br>
-                    - 비즈니스 정보, 계약 정보, 계약 건 수, 제품/서비스 소개, 연락처 정보, 위치 등 포함 가능
+                    - 비즈니스 정보, 계약 정보, 계약 건 수, 연락처 정보, 위치 등 포함 가능
                  <br>
                  <br>
                  3. **관리자 페이지 기능**:<br>
-
                     - 사업자들의 등록 신청 승인/거절, 사용자 정보 관리, 콘텐츠 관리, 통계 및 분석 기능 포함
                  <br>
                  <br>
