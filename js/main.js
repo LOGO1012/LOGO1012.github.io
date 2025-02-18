@@ -66,52 +66,68 @@ window.addEventListener('scroll', _.throttle(
 ), 300);
 
 // 각 슬라이드에 대해 독립적인 prev/next 기능 구현
-document.querySelectorAll('.slider').forEach((slider, index) => {
-  let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  // 첫 번째 프로젝트 슬라이드
+  const slides1 = document.querySelectorAll(".project_containor1 .slide");
+  let currentIndex1 = 0;
+  
+  const prevButton1 = document.getElementById("prevButton1");
+  const nextButton1 = document.getElementById("nextButton1");
 
-  const slides = slider.querySelectorAll('.slide');
-  const prevButton = slider.querySelector('.leftButton');  // .leftButton으로만 선택
-  const nextButton = slider.querySelector('.rightButton');  // .rightButton으로만 선택
-  const currentSlideDisplay = slider.querySelector('#currentSlide');
-  const totalSlideCount = slider.querySelector('#slideCount');
-
-  // prevButton과 nextButton이 null이 아닌지 확인
-  console.log('prevButton:', prevButton);
-  console.log('nextButton:', nextButton);
-
-  // 슬라이드 개수 및 현재 슬라이드 업데이트
-  function updateSlideCount() {
-    const totalSlides = slides.length;
-    totalSlideCount.textContent = `/ ${totalSlides}`;
+  function showSlide1(index) {
+    slides1.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) {
+        slide.classList.add("active");
+      }
+    });
   }
 
-  // 현재 슬라이드 번호 업데이트
-  function updateCurrentSlide() {
-    currentSlideDisplay.textContent = currentSlide + 1;
+  prevButton1.addEventListener("click", function () {
+    currentIndex1 = (currentIndex1 === 0) ? slides1.length - 1 : currentIndex1 - 1;
+    showSlide1(currentIndex1);
+  });
+
+  nextButton1.addEventListener("click", function () {
+    currentIndex1 = (currentIndex1 === slides1.length - 1) ? 0 : currentIndex1 + 1;
+    showSlide1(currentIndex1);
+  });
+
+  showSlide1(currentIndex1);
+
+  // 두 번째 프로젝트 슬라이드
+  const slides2 = document.querySelectorAll(".project_containor2 .slide");
+  let currentIndex2 = 0;
+  
+  const prevButton2 = document.getElementById("prevButton2");
+  const nextButton2 = document.getElementById("nextButton2");
+
+  function showSlide2(index) {
+    slides2.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) {
+        slide.classList.add("active");
+      }
+    });
   }
 
-  // 이전 슬라이드로 이동
-  prevButton.addEventListener('click', ()  => {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-    updateCurrentSlide();
+  prevButton2.addEventListener("click", function () {
+    currentIndex2 = (currentIndex2 === 0) ? slides2.length - 1 : currentIndex2 - 1;
+    showSlide2(currentIndex2);
   });
 
-  // 다음 슬라이드로 이동
-  nextButton.addEventListener('click', () => {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-    updateCurrentSlide();
+  nextButton2.addEventListener("click", function () {
+    currentIndex2 = (currentIndex2 === slides2.length - 1) ? 0 : currentIndex2 + 1;
+    showSlide2(currentIndex2);
   });
 
-  // 페이지 로드 시 슬라이드 개수와 현재 슬라이드 번호 초기화
-  document.addEventListener('DOMContentLoaded', function () {
-    updateSlideCount();
-    updateCurrentSlide();
-  });
+  showSlide2(currentIndex2);
 });
+
+
+
+
+
 
 // 토글 메뉴
 document.addEventListener('DOMContentLoaded', function () {

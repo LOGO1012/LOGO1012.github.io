@@ -366,8 +366,48 @@ header .sub-menu ul.menu li a.moved:hover {
   font-family: Noto Sans KR,sans-serif;
   justify-content: center;
 }
+.projects .project_containor1 {
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Noto Sans KR,sans-serif;
+  justify-content: center;
+}
+.projects .project_containor2 {
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Noto Sans KR,sans-serif;
+  justify-content: center;
+}
 
 .projects .project_containor .project_box{
+  
+  flex-shrink: 0;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 35px;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  margin-bottom: 0;
+  box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255   / 0%);
+}
+.projects .project_containor1 .project_box{
+  
+  flex-shrink: 0;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 35px;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  margin-bottom: 0;
+  box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255   / 0%);
+}
+.projects .project_containor2 .project_box{
   
   flex-shrink: 0;
   width: 100%;
@@ -385,8 +425,38 @@ header .sub-menu ul.menu li a.moved:hover {
   font-size: 2.0rem;
   color: #56585C;
 }
+.projects .project_containor1 .project_box .project_box_title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #56585C;
+}
+.projects .project_containor2 .project_box .project_box_title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #56585C;
+}
 
 .projects .project_containor .project_box .project_box_subtitle{
+  text-align: center;
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9CA0A8;
+}
+.projects .project_containor1 .project_box .project_box_subtitle{
+  text-align: center;
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9CA0A8;
+}
+.projects .project_containor2 .project_box .project_box_subtitle{
   text-align: center;
   padding-bottom: .5rem;
   margin-bottom: 1.5rem;
@@ -403,8 +473,28 @@ header .sub-menu ul.menu li a.moved:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.projects .project_containor1 .project_box .project_box_des{
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects .project_containor2 .project_box .project_box_des{
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .projects .project_containor .project_box .project_box_des_left {
+  width: 45%;
+}
+.projects .project_containor1 .project_box .project_box_des_left {
+  width: 45%;
+}
+.projects .project_containor2 .project_box .project_box_des_left {
   width: 45%;
 }
 
@@ -412,8 +502,22 @@ header .sub-menu ul.menu li a.moved:hover {
   width: 45%;
   height: auto;
 }
+.projects .project_containor1 .project_box .project_box_des_right {
+  width: 45%;
+  height: auto;
+}
+.projects .project_containor2 .project_box .project_box_des_right {
+  width: 45%;
+  height: auto;
+}
 
 .projects .project_containor .project_box .project_box_des_right .project_box_des_right_info{
+  border-top: 1px solid #9CA0A8;
+}
+.projects .project_containor1 .project_box .project_box_des_right .project_box_des_right_info{
+  border-top: 1px solid #9CA0A8;
+}
+.projects .project_containor2 .project_box .project_box_des_right .project_box_des_right_info{
   border-top: 1px solid #9CA0A8;
 }
 
@@ -424,7 +528,35 @@ header .sub-menu ul.menu li a.moved:hover {
   font-weight: 900;
   font-size: 1.2rem;
 }
+.projects .project_containor1 .project_box .project_box_des_right .project_box_des_right_info .info_key{
+  display: inline-block;
+  vertical-align: top;
+  width: 6.4rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.projects .project_containor2 .project_box .project_box_des_right .project_box_des_right_info .info_key{
+  display: inline-block;
+  vertical-align: top;
+  width: 6.4rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
 .projects .project_containor .project_box .project_box_des_right .project_box_des_right_info .info_value{
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.projects .project_containor1 .project_box .project_box_des_right .project_box_des_right_info .info_value{
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.projects .project_containor2 .project_box .project_box_des_right .project_box_des_right_info .info_value{
   display: inline-block;
   vertical-align: bottom;
   width: calc(100% - 8.4rem);
@@ -538,26 +670,36 @@ footer .footer_icons .footer_icon{
 .slider .slide.active {
   display: block;
 }
-/* 기본 버튼 스타일 */
+
+/* 슬라이드 버튼 스타일 */
 .slideButton {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(228, 228, 228, 0.5);
+  background-color: rgba(194, 194, 194, 0.5);
+  color: white;
   border: none;
   padding: 10px;
+  font-size: 20px;
   cursor: pointer;
-  border-radius: 50%;
+  z-index: 1;
 }
 
-.leftButton {
+#prevButton1 {
   left: 10px;
 }
 
-.rightButton {
+#nextButton1 {
   right: 10px;
 }
 
+#prevButton2 {
+  left: 10px;
+}
+
+#nextButton2 {
+  right: 10px;
+}
 
 /* 호버 효과 */
 .slideButton:hover {
@@ -568,6 +710,8 @@ footer .footer_icons .footer_icon{
 .slideButton:active {
   background-color: #93aec9; /* 클릭 시 배경색 변경 */
 }
+
+
 .controls {
   text-align: center;
 }
@@ -635,6 +779,26 @@ header.moved .sub-menu.active {
     overflow: auto;
   }
   .projects .project_containor .project_box .project_box_des_left{
+    width: auto;
+  }
+
+  .projects .project_containor1 .project_box .project_box_des{
+    display: flex; /* Flexbox 레이아웃 적용 */
+    flex-direction: column; /* 아이템들을 세로로 정렬 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    overflow: auto;
+  }
+  .projects .project_containor1 .project_box .project_box_des_left{
+    width: auto;
+  }
+
+  .projects .project_containor2 .project_box .project_box_des{
+    display: flex; /* Flexbox 레이아웃 적용 */
+    flex-direction: column; /* 아이템들을 세로로 정렬 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    overflow: auto;
+  }
+  .projects .project_containor2 .project_box .project_box_des_left{
     width: auto;
   }
 
